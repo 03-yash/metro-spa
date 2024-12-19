@@ -251,7 +251,7 @@ const Services = () => {
   );
 
   // WhatsApp number and base URL
-  const whatsappNumber = "+919754329082";
+  const whatsappNumber = "+917440744919";
   const whatsappBaseUrl = `https://wa.me/${whatsappNumber}?text=`;
 
   return (

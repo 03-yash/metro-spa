@@ -70,7 +70,7 @@ const Navbar = () => {
 
          
           <a
-            href="https://wa.me/+919754329082?text=Hello%2C%20I%20want%20to%20make%20a%20booking"
+            href="https://wa.me/+917440744919?text=Hello%2C%20I%20want%20to%20make%20a%20booking"
             target="_blank"
             rel="noopener noreferrer"
             className="w-24 h-10 border-2 rounded-md border-pink-400 text-sm text-pink-400 bg-pink-50 hover:bg-pink-100 transition flex items-center justify-center font-body"

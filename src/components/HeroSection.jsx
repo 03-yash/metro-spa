@@ -54,7 +54,7 @@ const HeroSection = () => {
                       rejuvenate the skin.
                     </p>
                     <a
-                      href={`https://wa.me/+919754329082?text=${encodeURIComponent(
+                      href={`https://wa.me/+917440744919?text=${encodeURIComponent(
                         "Hello, I want to make an inquiry about coconut oil massage"
                       )}`}
                       target="_blank"
@@ -80,7 +80,7 @@ const HeroSection = () => {
                       milk cream is applied to nourish and soften your skin.
                     </p>
                     <a
-                      href={`https://wa.me/+919754329082?text=${encodeURIComponent(
+                      href={`https://wa.me/+917440744919?text=${encodeURIComponent(
                         "Hello, I want to make an inquiry about milk cream massage"
                       )}`}
                       target="_blank"
@@ -103,7 +103,7 @@ const HeroSection = () => {
                     <h5 className="text-pink-500 font-bold font-body">INR 2,000</h5>
                     <p className="text-base font-highlight">Revitalize your senses with our Aroma Massage, featuring a blend of essential oils tailored to your needs. </p>
                     <a
-                      href={`https://wa.me/+919754329082?text=${encodeURIComponent(
+                      href={`https://wa.me/+917440744919?text=${encodeURIComponent(
                         "Hello, I want to make an inquiry about aroma massage"
                       )}`}
                       target="_blank"
@@ -132,7 +132,7 @@ const HeroSection = () => {
       <div className="relative">
         <Form />
         <a
-          href={`https://wa.me/+919754329082?text=${encodeURIComponent(
+          href={`https://wa.me/+917440744919?text=${encodeURIComponent(
             "Hello, I want to Inquire about your service"
           )}`}
           className="fixed bottom-10 right-10 bg-green-500 p-4 rounded-full shadow-lg transform transition-all hover:scale-110"

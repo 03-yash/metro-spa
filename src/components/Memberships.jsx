@@ -49,7 +49,7 @@ const Memberships = () => {
                 Valid for {membership.validity}
               </p>
               <a
-                href={`https://wa.me/+919754329082?text=I%20am%20interested%20in%20the%20${membership.name}%20Membership%20(${membership.price})`}
+                href={`https://wa.me/+917440744919?text=I%20am%20interested%20in%20the%20${membership.name}%20Membership%20(${membership.price})`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-6 px-6 py-2 text-white bg-pink-400 font-bold rounded-full hover:bg-pink-500 transition duration-300 font-body"

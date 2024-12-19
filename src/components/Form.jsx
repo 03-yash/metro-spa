@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import emailjs from 'emailjs-com';
 import { toast } from "react-toastify";
@@ -9,29 +8,37 @@ const Form = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  // Handle form submission (optional)
-  const handleSubmit =  (e) => {
+  // Handle form submission
+  const handleSubmit = (e) => {
     e.preventDefault();
+
+    // Validation
+    if (!name.trim() || !email.trim() || !message.trim()) {
+      toast.error("All fields are required!");
+      return;
+    }
+
     const serviceId = "service_dkxwqq2";
     const templateId = "template_em1ejbo";
     const publicKey = "6Q-kBkV3Ti4iCmtoQ";
-    const templateParams = {
-        from_name: name,
-        from_email: email,
-        to_name: "Rohit Verma", // Ensure this matches the fields in your template
-        message: message,
-      }
-    
 
-      emailjs.send(serviceId, templateId, templateParams, publicKey)
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      to_name: "Rohit Verma",
+      message: message,
+    };
+
+    emailjs
+      .send(serviceId, templateId, templateParams, publicKey)
       .then((response) => {
-       toast.success('Email sent successfully!', response);
-        setName('');
-        setEmail('');
-        setMessage('');
+        toast.success("Email sent successfully!");
+        setName("");
+        setEmail("");
+        setMessage("");
       })
       .catch((error) => {
-        toast.error('Error sending email:', error);
+        toast.error("Error sending email:", error);
       });
   };
 
@@ -41,7 +48,7 @@ const Form = () => {
 
       <div className="w-full text-center px-6">
         <h1 className="pt-16 text-xl text-black font-bold sm:text-4xl lg-text-8xl font-heading">
-        Have Questions? We’re Here to Help!
+          Have Questions? We’re Here to Help!
         </h1>
       </div>
 
